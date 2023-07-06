@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+header h1 {
+    font-family: 'Alegreya SC', serif;
+    color: white;
+    font-size: 7.5vw;
+}
+
+header #coep_tech {
+    background-image: url(/coep_tech.png);
+    height: 10vw;
+    width: 10vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header #mspark {
+    background-image: url(/ms.png);
+    height: 10vw;
+    width: 10vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/bg_img.jpg);
+    background-size: contain;
+    background-repeat:repeat-y;
+}

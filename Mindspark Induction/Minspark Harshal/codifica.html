@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codifica</title>
+    <link rel="icon" href="ms.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #backvideo {
+            position: fixed;
+        }
+
+        h1 {
+            position: relative;
+            text-align: center;
+            z-index: 20;
+            font-family: 'Cormorant SC', serif;
+            background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+            background-clip: border-box;
+            background-size: 100%;
+            font-size: 70px;
+            font-family: sans-serif;
+            letter-spacing: 5px;
+            font-weight: 600;
+            word-spacing: 5px;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        .container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            padding: 40px 0;
+            flex-wrap: wrap;
+            width: 90vw;
+        }
+
+        .container .box {
+            position: relative;
+            width: 20vw;
+            height: 60vh;
+            color: #fff;
+            /* background: #111; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 30px;
+            transition: 0.5s;
+        }
+
+        .container .box:hover {
+            transform: translateY(-20px);
+        }
+
+        .container .box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(45deg, #ffbc00, #ff0058);
+        }
+
+        .container .box::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(45deg, #ffbc00, #ff0058);
+            filter: blur(30px);
+        }
+
+        .container .box:nth-child(2)::after,
+        .container .box:nth-child(2)::before {
+            background: linear-gradient(315deg, #03a9f4, #ff0058);
+        }
+
+        .container .box:nth-child(3)::after,
+        .container .box:nth-child(3)::before {
+            background: linear-gradient(45deg, #4dff01, #ff0058);
+        }
+
+        .container .box:nth-child(4)::after,
+        .container_1 .box:nth-child(4)::before {
+            background: linear-gradient(315deg, #03a9f4, #ff0058);
+        }
+
+        .container .box:nth-child(5)::after,
+        .container .box:nth-child(5)::before {
+            background: linear-gradient(45deg, #4dff01, #ff0058);
+        }
+
+        .container .box span {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 3;
+        }
+
+        .container .box span::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            pointer-events: none;
+        }
+
+        .container .box .content {
+            z-index: 10;
+            padding: 20px 40px;
+        }
+
+        .container .box .content h2 {
+            font-size: 2em;
+            color: #fff;
+            margin-bottom: 10px;
+
+        }
+
+        .container .box .content p {
+            font-size: 1.1em;
+            color: #fff;
+            margin-bottom: 10px;
+            line-height: 1.4em;
+        }
+
+        .container .box .content a {
+            display: inline-block;
+            font-size: 1.1em;
+            color: #111;
+            padding: 10px;
+            background: rgb(23, 181, 178);
+            text-decoration: none;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body><video autoplay muted loop id="backvideo">
+        <source src="vedio_01.mp4" type="video/mp4">
+    </video>
+
+    <h1>Codifica
+
+    </h1>
+    <main>
+        <div class="container">
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <img src="Codejunkie.png" alt="" width="100px">
+                    <h2>Codejunkie</h2>
+                    <!-- <p>Coder? This is the right place for you to show case your coding skills.</p>
+                    <a href="codifica.html" target="_blank">Read More</a> -->
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <img src="cjplus.png" alt="" width="100px">
+                    <h2>Cjplus</h2>
+                    <!-- <p>Coder? This is the right place for you to show case your coding skills.</p>
+                    <a href="codifica.html" target="_blank">Read More</a> -->
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <img src="Predict-X.png" alt="" width="100px">
+                    <h2>Predict-X</h2>
+                    <!-- <p>Coder? This is the right place for you to show case your coding skills.</p>
+                    <a href="codifica.html" target="_blank">Read More</a> -->
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <img src="ReTracer.png" alt="" width="100px">
+                    <h2>ReTracer</h2>
+                    <!-- <p>Coder? This is the right place for you to show case your coding skills.</p>
+                    <a href="codifica.html" target="_blank">Read More</a> -->
+                </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                    <img src="Web design.png" alt="" width="100px">
+                    <h2>Web Design</h2>
+                    <!-- <p>Coder? This is the right place for you to show case your coding skills.</p>
+                    <a href="codifica.html" target="_blank">Read More</a> -->
+                </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amuzia</title>
+    <link rel="icon" href="ms.ico" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #backvideo {
+            position: fixed;
+        }
+
+        h1 {
+            position: relative;
+            text-align: center;
+            z-index: 20;
+            font-family: 'Cormorant SC', serif;
+            background: linear-gradient(90deg, #ff0000, #ffff00, #ff00f3, #0033ff, #ff00c4, #ff0000);
+            background-clip: border-box;
+            background-size: 100%;
+            font-size: 70px;
+            font-family: sans-serif;
+            letter-spacing: 5px;
+            font-weight: 600;
+            word-spacing: 5px;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+        }
+
+        main {
+            background-color: black;
+            width: 100vw;
+            display: inline;
+            height: 100%;
+            /* display: inline-block; */
+        }
+
+
+        .box {
+            width: 100vw;
+            height: 20vh;
+            /* background-color: #ff0030 */
+        }
+
+        /* .box img{
+            width: 100px;
+            padding: auto;
+        } */
+        .conatiner {
+            position: relative;
+            /* display: flex; */
+            bottom: 400px;
+            z-index: 10;
+            background: linear-gradient(45deg, red, blue, green);
+        }
+    </style>
+</head>
+
+<body><video autoplay muted loop id="backvideo">
+        <source src="vedio_01.mp4" type="video/mp4">
+    </video>
+
+    <h1>Amuzia
+        <hr>
+    </h1>
+    <main>
+        <div class="container">
+            <div class="box">
+                <img src="cjplus.png" alt="" width="100px">
+
+            </div>
+            <div class="box">
+                <img src="Codejunkie.png" alt="" width="100px">
+            </div>
+            <div class="box">
+                <img src="Predict-X.png" alt="" width="100px">
+            </div>
+            <div class="box">
+                <img src="ReTracer.png" alt="" width="100px">
+            </div>
+            <div class="box">
+                <img src="Web design.png" alt="" width="110px">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
